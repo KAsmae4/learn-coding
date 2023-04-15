@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #837a7a;
+   
+}
+
+.about-section{
+    background: url(imgs/pic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: rgba(13, 57, 230, 0.849);
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-image: linear-gradient( to right ,rgba(37, 78, 241, 0),rgba(44, 39, 39, 0.849));
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text{
+    font-size: 15px;
+    color: #ffffff ;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>Hi, we're Learn Coding.</h1>
+            <p class="text">
+                We're into connecting you with the world of making Websites by giving you a full experience of learning coding and designing your own website with your own imagination. 
+            </p>
+            <div class="skills">
+                <span>Web Design</span>
+                <span>Photoshop & Illustrator</span>
+                <span>Coding</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

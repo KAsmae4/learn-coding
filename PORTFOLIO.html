@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Landing Page</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #edf2fc;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+
+.logo{
+    width: 30%;
+    cursor: pointer;
+    
+}
+
+.btn{
+    background: #ff4321;
+    border-radius: 5px;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #f0ebeb;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: transparent;
+    color: #ff4321;
+    border: 1px solid #ff4321;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+.info h1{
+    font-size: 40px;
+    color: #444242;
+}
+.info h1 span{
+   color: #ff4321;
+}
+.info p{
+    color: #606163;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .man-img{
+    left: 54%;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="imgs/port2.png" class="logo">
+            
+
+        </nav>
+        <div class="info">
+            <h1>I am <span>ASMAE KERARMI</span></h1>
+            <h1>I'm a Digital Development<br>Student</h1>
+            <p>Welcome to my officail Portfolio Website Where I put all<br> my work related to my designs and many more.</p>
+            <a href="index.html" class="btn">Visit My Website</a>
+        </div>
+        <div class="img-box">
+            <img src="imgs/back.png" class="back-img">
+            <img src="imgs/Programming-cuate.png" class="man-img">
+        </div>
+    </div>
+
+</body>
+</html>
